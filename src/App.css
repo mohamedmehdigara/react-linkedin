@@ -18,27 +18,40 @@ body {
 
 /* Sidebar.css */
 .sidebar {
-  width: 280px;
-  background-color: #fff;
+  background-color: #f5f5f5;
+  padding: 20px;
 }
 
 .sidebar__nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sidebar__nav ul {
+  display: flex;
   list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-.sidebar__nav li {
-  padding: 12px 16px;
+.sidebar__nav ul li {
+  margin-right: 20px;
 }
 
-.sidebar__nav li a {
+.sidebar__nav ul li:last-child {
+  margin-right: 0;
+}
+
+.sidebar__nav ul li a {
+  color: #000;
   text-decoration: none;
-  color: #333;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.sidebar__nav li a:hover {
-  color: #0a66c2;
+.sidebar__nav ul li a:hover {
+  color: #0073b1;
 }
 
 /* Feed.css */
