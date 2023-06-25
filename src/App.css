@@ -11,9 +11,64 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
-  background-color: #0a66c2;
-  color: #fff;
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.search-bar {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.search-bar__input {
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__sections {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__sections li {
+  margin-right: 10px;
+}
+
+.header__sections li:last-child {
+  margin-right: 0;
+}
+
+.header__sections li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.header__sections li a:hover {
+  color: #0073b1;
 }
 
 /* Sidebar.css */
