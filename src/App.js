@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar';
 import Widgets from './components/Widgets';
 import Header from './components/Header';
 import Feed from './components/Feed';
+import "./App.css";
 
 const App = () => {
   return (

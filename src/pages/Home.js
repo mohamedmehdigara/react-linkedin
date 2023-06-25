@@ -10,11 +10,14 @@ const Home = () => {
       <Header />
       <main className="main">
         <Sidebar />
-        <Feed />
-        <Widgets />
+        <div className="content">
+          <Feed />
+          <Widgets />
+        </div>
       </main>
     </div>
   );
 };
 
 export default Home;
+

@@ -14,10 +14,16 @@ const Sidebar = () => {
         <li>
           <Link to="/messages">Messages</Link>
         </li>
-        {/* Add more sidebar navigation links as needed */}
+        <li>
+          <Link to="/notifications">Notifications</Link>
+        </li>
+        <li>
+          <Link to="/me">Me</Link>
+        </li>
       </ul>
     </aside>
   );
 };
 
 export default Sidebar;
+
