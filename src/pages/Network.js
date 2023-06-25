@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Network = () => {
-  const connections = [
+  const networkData = [
     {
       id: 1,
       name: 'John Doe',
@@ -14,18 +14,18 @@ const Network = () => {
       avatar: 'avatar2.png',
       headline: 'UX Designer',
     },
-    // Add more sample connections as needed
+    // Add more sample network connections as needed
   ];
 
   return (
     <div className="network">
       <h2>My Network</h2>
-      {connections.map((connection) => (
-        <div className="connection" key={connection.id}>
-          <img className="connection__avatar" src={connection.avatar} alt={`${connection.name}'s Avatar`} />
-          <div className="connection__info">
-            <div className="connection__name">{connection.name}</div>
-            <div className="connection__headline">{connection.headline}</div>
+      {networkData.map((connection) => (
+        <div className="network__connection" key={connection.id}>
+          <img className="network__avatar" src={connection.avatar} alt={`${connection.name}'s Avatar`} />
+          <div className="network__info">
+            <div className="network__name">{connection.name}</div>
+            <div className="network__headline">{connection.headline}</div>
           </div>
         </div>
       ))}
@@ -34,4 +34,5 @@ const Network = () => {
 };
 
 export default Network;
+
 

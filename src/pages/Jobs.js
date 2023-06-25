@@ -1,18 +1,18 @@
 import React from 'react';
 
 const Jobs = () => {
-  const jobs = [
+  const jobList = [
     {
       id: 1,
-      title: 'Frontend Developer',
-      company: 'ABC Inc.',
-      location: 'New York, NY',
+      title: 'Software Engineer',
+      company: 'ABC Technologies',
+      location: 'San Francisco, CA',
     },
     {
       id: 2,
-      title: 'Software Engineer',
-      company: 'XYZ Corp.',
-      location: 'San Francisco, CA',
+      title: 'UX Designer',
+      company: 'XYZ Design Studio',
+      location: 'New York, NY',
     },
     // Add more sample jobs as needed
   ];
@@ -20,7 +20,7 @@ const Jobs = () => {
   return (
     <div className="jobs">
       <h2>Jobs</h2>
-      {jobs.map((job) => (
+      {jobList.map((job) => (
         <div className="job" key={job.id}>
           <div className="job__title">{job.title}</div>
           <div className="job__company">{job.company}</div>
@@ -32,4 +32,5 @@ const Jobs = () => {
 };
 
 export default Jobs;
+
 

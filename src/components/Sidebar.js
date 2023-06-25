@@ -6,13 +6,16 @@ const Sidebar = () => {
     <aside className="sidebar">
       <ul className="sidebar__nav">
         <li>
-          <Link to="/profile">My Profile</Link>
+          <Link to="/home">Home</Link>
         </li>
         <li>
-          <Link to="/connections">Connections</Link>
+          <Link to="/connections">My network</Link>
         </li>
         <li>
-          <Link to="/messages">Messages</Link>
+          <Link to="/jobs">Jobs</Link>
+        </li>
+        <li>
+          <Link to="/messages">Messaging</Link>
         </li>
         <li>
           <Link to="/notifications">Notifications</Link>

@@ -4,12 +4,12 @@ const Notifications = () => {
   const notifications = [
     {
       id: 1,
-      message: 'John Doe liked your post.',
+      text: 'You have a new connection request.',
       timestamp: '2 hours ago',
     },
     {
       id: 2,
-      message: 'Jane Smith commented on your article.',
+      text: 'Your post reached 100 likes.',
       timestamp: '4 hours ago',
     },
     // Add more sample notifications as needed
@@ -20,7 +20,7 @@ const Notifications = () => {
       <h2>Notifications</h2>
       {notifications.map((notification) => (
         <div className="notification" key={notification.id}>
-          <div className="notification__message">{notification.message}</div>
+          <div className="notification__text">{notification.text}</div>
           <div className="notification__timestamp">{notification.timestamp}</div>
         </div>
       ))}
@@ -29,3 +29,4 @@ const Notifications = () => {
 };
 
 export default Notifications;
+
