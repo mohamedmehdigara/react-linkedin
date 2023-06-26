@@ -1,16 +1,21 @@
 import React from 'react';
-import SearchBar from '../components/SearchBar';
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="header__left">
-        <img className="header__logo" src="linkedin_logo.png" alt="LinkedIn Logo" />
-        <SearchBar />
-        
-      </div>
-      <div className="header__right">
+      <div>
+        <div>
+        <img className="header__logo" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" />
+
+          
+          
+<input type="text" className="header__search-input" placeholder="Search" />
+
+        </div>
         <ul className="header__sections">
+          
+          
+          
           <li>
             <a href="/">Home</a>
           </li>
