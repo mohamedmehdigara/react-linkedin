@@ -1,6 +1,5 @@
 import React from 'react';
 import Post from '../components/Post';
-import Sidebar from '../components/Sidebar';
 import Widgets from '../components/Widgets';
 
 const Home = () => {
@@ -28,7 +27,6 @@ const Home = () => {
 
   return (
     <div className="home">
-      <Sidebar />
       <div className="home__feed">
         {posts.map((post) => (
           <Post key={post.id} author={post.author} content={post.content} timestamp={post.timestamp} />

@@ -32,5 +32,3 @@ const Messaging = () => {
 };
 
 export default Messaging;
-
-
