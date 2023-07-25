@@ -19,12 +19,12 @@ const App = () => {
         <Header />
         <Sidebar/>
         <Routes>
-          <Route exact path="/" component={Home} />
-          <Route path="/network" component={Network} />
-          <Route path="/jobs" component={Jobs} />
-          <Route path="/messaging" component={Messaging} />
-          <Route path="/notifications" component={Notifications} />
-          <Route path="/me" component={Me} />
+          <Route exact path="/" component={<Home/>} />
+          <Route path="/network" component={<Network/>} />
+          <Route path="/jobs" component={<Jobs/>} />
+          <Route path="/messaging" component={<Messaging/>} />
+          <Route path="/notifications" component={<Notifications/>} />
+          <Route path="/me" component={<Me/>} />
         </Routes>
         <Main/>
         <RightSidebar/>
