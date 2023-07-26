@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Home from './pages/Home';
-import Network from './pages/Network';
+import MyNetwork from './pages/MyNetwork';
 import Jobs from './pages/Jobs';
 import Messaging from './pages/Messaging';
 import Notifications from './components/Notifications';
@@ -20,7 +20,7 @@ const App = () => {
         <Sidebar/>
         <Routes>
           <Route exact path="/" element={<Home/>} />
-          <Route path="/network" element={<Network/>} />
+          <Route path="/mynetwork" element={<MyNetwork/>} />
           <Route path="/jobs" element={<Jobs/>} />
           <Route path="/messaging" element={<Messaging/>} />
           <Route path="/notifications" element={<Notifications/>} />
